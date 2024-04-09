@@ -1,0 +1,52 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerodha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<div style="box-shadow:2px 1px 2px #eee;display:flex;justify-content:space-between;padding-top:20px;padding-left:100px;;padding-right:100px;">
+    <img style="padding-top:15px;" height="20" width="120px" src="logo.svg" alt="logo">
+    <div style="display:flex;">
+        <div style="padding:20px;color:#666;cursor:pointer;">Sign Up</div>
+        <div style="padding:20px;color:#666;cursor:pointer;">About</div>
+        <div style="padding:20px;color:#666;cursor:pointer;">Product</div>
+        <div style="padding:20px;color:#666;cursor:pointer;">Support</div>
+    </div>
+</div>
+<div style="display:flex;justify-content:center;padding-top:20px;">
+    <img width="800" src="landing.png" alt="image">
+</div>
+<div style="display:flex;justify-content:center;">
+    <h1>Invest in everything</h1>
+</div>
+<div style="display:flex;justify-content:center;">
+    <h2>Online platform to invest in stocks, derivatives, mutual funds, and more</h2>
+</div>
+<div style="display:flex;justify-content:center;">
+    <div style="background-color:#387ed1; padding:10 10 10 10;color:white;font-size:20px;cursor:pointer;border-radius:3px;">Sign up now</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="calculator">
+    <h2>Investment Calculator</h2>
+    <label for="investmentType">Select Investment Type:</label>
+    <select id="investmentType">
+        <option value="lumpsum">Lump Sum</option>
+        <option value="sip">SIP (Systematic Investment Plan)</option>
+    </select>
+    <label for="investmentAmount">Investment Amount:</label>
+    <input type="number" id="investmentAmount">
+    <label for="timePeriod">Time Period (in years):</label>
+    <input type="number" id="timePeriod">
+    <label for="interestRate">Interest Rate (annual %):</label>
+    <input type="number" id="interestRate">
+    <button onclick="calculate()">Calculate</button>
+    <div id="result"></div>
+</div>
+<script src="script.js"></script>
